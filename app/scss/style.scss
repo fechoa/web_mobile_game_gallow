@@ -1,0 +1,25 @@
+@media (max-width: 415px) {
+    @import 'blocks/colors/colors.scss';
+
+    @import 'blocks/html/html.scss';
+
+    @import 'blocks/stars/stars.scss';
+
+    @import 'blocks/body/body.scss';
+
+    @import 'blocks/button/button.scss';
+
+    @import 'blocks/enterYourName/enterYourName.scss';
+
+    @import 'blocks/welcome/welcome.scss';
+
+    @import 'blocks/mainScreen/mainScreen.scss';
+
+    @import 'blocks/score/score.scss';
+
+    @import 'blocks/mistake/mistake.scss';
+
+    @import 'blocks/man/man.scss';
+
+    @import 'blocks/modalLetter/modalLetter.scss';
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallows</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <svg class="body_handMan" width="154" height="338" viewBox="0 0 154 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="77" cy="77" r="74.5" stroke="white" stroke-width="5"/>
+        <rect x="73" y="153" width="9" height="185" fill="white"/>
+    </svg>
+    
+    <button class="body_button  button  button_show  js-start" type="button">
+      <p class="body_buttonText">Start</p>
+      <div class="container">
+        <div class="star star-1"></div>
+        <div class="star star-2"></div>
+        <div class="star star-3"></div>
+        <div class="cloud-group-1">
+          <div class="cloud  cloud-1"></div>
+          <div class="cloud  cloud-2"></div>
+          <div class="cloud  cloud-3"></div>
+          <div class="cloud  cloud-4"></div>
+          <div class="cloud  cloud-5"></div>
+          <div class="cloud  cloud-6"></div>
+        </div>
+        <div class="cloud-group-2">
+          <div class="cloud  cloud-1"></div>
+          <div class="cloud  cloud-2"></div>
+          <div class="cloud  cloud-3"></div>
+          <div class="cloud  cloud-4"></div>
+          <div class="cloud  cloud-5"></div>
+          <div class="cloud  cloud-6"></div>
+        </div>
+        <div class="cloud-group-3">
+          <div class="cloud  cloud-1"></div>
+          <div class="cloud  cloud-2"></div>
+          <div class="cloud  cloud-3"></div>
+          <div class="cloud  cloud-4"></div>
+          <div class="cloud  cloud-5"></div>
+          <div class="cloud  cloud-6"></div>
+        </div>
+        <div class="orbit  orbit-1"></div>
+        <div class="orbit  orbit-2"></div>
+        <div class="orbit  orbit-3"></div>
+        <div class="orbit  orbit-4"></div>
+        <div class="orbit  orbit-5"></div>
+        <div class="orbit  orbit-6"></div>
+        <div class="ring-before"></div>
+        <div class="ring-bigger-before"></div>
+        <div class="ring-after"></div>
+        <div class="ring-bigger-after"></div>
+      </div>
+    </button>
+    
+    <form class="body_enterYourName  enterYourName">
+      <label class="enterYourName_Label" for="yourName">Enter your name</label>
+      <input class="enterYourName_Input" id="yourName" type="text">
+      <button class="enterYourName_Button" type="button">
+          <p class="enterYourName_ButtonText">Apply</p>
+      </button>
+    </form>
+
+    <div class="body_welcome">
+      <h3 class="welcome_title">Welcome</h3>
+
+      <p class="welcome_text">
+        In the game of the gallows you have 8 lifes to guess the word I asked.
+      </p>
+      <p class="welcome_text">
+        Each wrong letter will show you a new body part, 
+        and as soon as the whole person is shown, the game is over.
+      </p>
+      <p class="welcome_text">
+        Good luck!
+      </p>
+
+      <button class="welcome_button" type="button">
+        Ok
+      </button>
+    </div>
+
+    <div class="body_mainScreen">
+      <div class="mainScreen_navBar">
+        <div class="mainScreen_nameBox">
+          <p class="mainScreen_nameText"></p>
+        </div>
+        <div class="mainScreen_lifeBox">
+          <div class="mainScreen_lifeIco"></div>
+          <p class="mainScreen_lifeValue">8</p>
+        </div>
+      </div>
+
+      <div class="mainScreen_score">
+        <div class="score_letter">
+          <p class="score_letterText"></p>
+        </div>
+      </div>
+
+      <div class="mainScreen_man  man">
+        <div class="man_head"></div>
+        <div class="man_body"></div>
+        <div class="man_hands">
+          <div class="man_leftHand"></div>
+          <div class="man_rightHand"></div>
+        </div>
+        <div class="man_pit">
+          <div class="man_pitEnd">
+            <p class="man_pitText">End</p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mainScreen_mistake  mistake">
+        <li class="mistake_item  mistake_item1"></li>
+        <li class="mistake_item  mistake_item2"></li>
+        <li class="mistake_item  mistake_item3"></li>
+        <li class="mistake_item  mistake_item4"></li>
+        <li class="mistake_item  mistake_item5"></li>
+        <li class="mistake_item  mistake_item6"></li>
+        <li class="mistake_item  mistake_item7"></li>
+      </ul>
+
+      <button class="mainScreen_checkLetter" type="button">
+        <p class="mainScreen_checkText">Check letter</p>
+      </button>
+
+      <div class="mainScreen_modalLetter">
+        <input class="modalLetter_char" type="text" maxlength="1">
+        <button class="modalLetter_enter" type="button">Check</button>
+        <button class="modalLetter_close" type="button">
+          <span class="modalLetter_closeIco"></span>
+          <span class="modalLetter_closeIco"></span>
+        </button>
+      </div>
+
+      <div class="mainScreen_modalWin">
+        <p class="mainScreen_modalWinText">You Win!</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

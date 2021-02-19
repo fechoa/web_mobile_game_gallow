@@ -1,0 +1,275 @@
+// Man container
+.man {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 160px;
+    height: 290px;
+}
+
+// Head
+.man_head {
+    display: none;
+
+    width: 92px;
+    height: 92px;
+
+    align-self: center;
+
+    background-image: url("../../../img/svg/man/head.svg");
+    background-repeat: no-repeat;
+    background-size: 92px 92px;
+    background-position: center;
+}
+
+// Body
+.man_body {
+    display: none;
+
+    width: 7px;
+    height: 96px;
+
+    align-self: center;
+
+    background-image: url("../../../img/svg/man/body.svg");
+    background-repeat: no-repeat;
+    background-size: 7px 96px;
+    background-position: center;
+}
+
+// Hands container
+.man_hands {
+    display: none;
+    flex-direction: row;
+
+    width: 108px;
+
+    align-self: center;
+
+    margin-top: -8px;
+}
+
+// Left Hand
+.man_leftHand {
+    display: none;
+    width: 54px;
+    height: 85px;
+
+
+    background-image: url("../../../img/svg/man/leftHand.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Right Hand
+.man_rightHand {
+    display: none;
+    width: 54px;
+    height: 85px;
+
+
+
+    background-image: url("../../../img/svg/man/rightHand.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Pit
+.man_pit {
+    display: none;
+    
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 160px;
+    height: 59px;
+
+    background-image: url("../../../img/svg/man/pit.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// End
+.man_pitEnd {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    background-color: $mainWhite;
+}
+
+// End Text
+.man_pitText {
+    margin: 0;
+    padding: 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 29px;
+
+    letter-spacing: -0.4px;
+}
+
+
+// Style Show Piece of Body
+    .man-one {
+        .man_head {
+            display: flex;
+            animation: manHead 0.4s linear both;
+        }
+    }
+    @keyframes manHead {
+        0% {
+          -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                  transform: rotate3d(1, 1, 0, 0deg);
+        }
+        50% {
+          -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                  transform: rotate3d(1, 1, 0, -180deg);
+        }
+        100% {
+          -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                  transform: rotate3d(1, 1, 0, -360deg);
+        }
+    }
+      
+    .man-two {
+        .man_body {
+            display: flex;
+            animation: manBody 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+        }
+    }
+    @keyframes manBody {
+        0% {
+            transform: translateY(100px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+      
+
+
+    .man-three {
+        .man_hands {
+            display: flex;
+        }
+
+        .man_leftHand {
+            display: flex;
+            animation: manHand 0.6s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+        }
+    }
+    
+
+    .man-four {
+        .man_hands {
+            display: flex;
+        }
+
+        .man_rightHand {
+            display: flex;
+            animation: manHand 0.6s cubic-bezier(0.860, 0.000, 0.070, 1.000) both;
+        }
+    }
+    
+    @keyframes manHand {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+
+    .man-five {
+        .man_pit {
+            display: flex;
+            animation: manPit 0.65s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+        }
+    }
+    @keyframes manPit {
+        0% {
+          -webkit-transform: scale(1) rotateZ(0);
+                  transform: scale(1) rotateZ(0);
+        }
+        50% {
+          -webkit-transform: scale(2) rotateZ(180deg);
+                  transform: scale(2) rotateZ(180deg);
+        }
+        100% {
+          -webkit-transform: scale(1) rotateZ(360deg);
+                  transform: scale(1) rotateZ(360deg);
+        }
+    }
+      
+
+    .man-six {
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        animation: manSix 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+        .man_hands {
+            display: none;
+        }
+    }
+    @keyframes manSix {
+        0% {
+                  transform: translateY(100px);
+        }
+        100% {
+                  transform: translateY(0);
+        }
+    }
+      
+    .man-seven {
+        animation: manSeven 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        .man_body {
+            display: none;
+        }
+    }
+    @keyframes manSeven {
+        0% {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+        }
+        100% {
+          -webkit-transform: rotateY(180deg);
+                  transform: rotateY(180deg);
+        }
+    }
+
+    .man-eight {
+        .man_head {
+            display: none;
+        }
+
+        .man_pitEnd {
+            display: flex;
+            animation: manEight 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) forwards;
+        }
+    }
+    @keyframes manEight {
+        0% {
+                  transform: scale(0.5);
+        }
+        100% {
+                  transform: scale(1);
+        }
+    }

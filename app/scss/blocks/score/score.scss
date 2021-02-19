@@ -1,0 +1,42 @@
+// Score
+.score {
+    display: flex;
+
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 9px;
+}
+
+// Letter Box
+.score_letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 39px;
+    height: 42px;
+    
+    margin-right: 9px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    background-color: #C4C4C4;
+    border-radius: 5px;
+}
+
+// Letter Text
+.score_letterText {
+    margin: 0;
+    padding: 0;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 29px;
+    
+    letter-spacing: -0.4px;
+    
+    color: #292929;    
+}

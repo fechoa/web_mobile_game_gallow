@@ -17,7 +17,6 @@ and as soon as the whole person is shown, the game is over.
 
 ## Screenshots
 
-- Game simulation:
   <br>
   <br>
-  <img src="./game_show.gif" width="200" alt="gallow_game">
+  <img src="./game_show.gif" width="300" alt="gallow_game">

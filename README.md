@@ -20,4 +20,4 @@ and as soon as the whole person is shown, the game is over.
 - Game simulation:
   <br>
   <br>
-  <img src="./game_show.gif" width="600" alt="gallow_game">
+  <img src="./game_show.gif" width="200" alt="gallow_game">
